@@ -1,0 +1,47 @@
+
+/*
+
+A
+B B
+C C C
+D D D D
+E E E E E
+D D D D
+C C C
+B B
+A
+
+
+*/
+
+// source code:
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int i,j,n;
+    cout<<"Enter The Number of pattern : ";
+    cin>>n;
+    for(i=1;i<=n;i++)
+    {
+        for(j=1;j<=i;j++)
+        {
+
+            printf("%c ",i+64);
+        }
+        cout<<endl;
+    }
+     for(i=n-1;i>=1;i--)
+    {
+        for(j=1;j<=i;j++)
+        {
+
+            printf("%c ",i+64);
+        }
+        cout<<endl;
+    }
+}
+
+
+
